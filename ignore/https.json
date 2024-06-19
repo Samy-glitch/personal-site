@@ -1,0 +1,1 @@
+{"error": "unsupported_grant_type", "message": "The authorization grant type is not supported by the authorization server.", "hint": "Check the `grant_type` parameter"}

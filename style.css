@@ -43,7 +43,7 @@ main {
 }
 
 .defult-bg {
-  background-color: #101e2486;
+  background-color: #0b212582;
   backdrop-filter: blur(60px);
   z-index: 1;
 }

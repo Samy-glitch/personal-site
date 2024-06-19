@@ -50,8 +50,8 @@ def get_data():
 
 
 if __name__ == '__main__':
-  get_data()
-  """ while True:
+  #get_data()
+  while True:
     get_data()
-    time.sleep(3600) """
+    time.sleep(3600)
     

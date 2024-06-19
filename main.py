@@ -3,12 +3,14 @@ from datetime import datetime
 import requests
 import time
 import json
+import pytz
 
 
 
 def get_data():
 
-  now = datetime.now()
+  dhakaTz = pytz.timezone("Asia/Dhaka") 
+  now = datetime.now(dhakaTz)
 
 
   dt_string = now.strftime("%I:%M %p | %d/%m/%Y")

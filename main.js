@@ -125,17 +125,21 @@ function logDate(date, date2) {
   document.getElementById("info1").innerHTML = "updated at: " + date2;
   document.getElementById("info2").innerHTML =
     "last updated: " + minutes + " minutes ago";
-  if (new Date(date).getHours() + 2 > 24) {
+  if (new Date(date).getHours() + 2 >= 24) {
     var hours1 = new Date(date).getHours() - 22;
     var hours2 = ("0" + hours1).slice(-2);
-    var hoursDiff = hours2 + ":" + new Date(date).getMinutes();
+    var minutes1 = new Date(date).getMinutes();
+    var minutes2 = ("0" + minutes1).slice(-2);
+    var hoursDiff = hours2 + ":" + minutes2;
     console.log("update at: " + tConvert(hoursDiff));
     document.getElementById("info3").innerHTML =
       "update at: " + tConvert(hoursDiff);
   } else {
     var hours1 = new Date(date).getHours() + 2;
     var hours2 = ("0" + hours1).slice(-2);
-    var hoursDiff2 = hours2 + ":" + new Date(date).getMinutes();
+    var minutes1 = new Date(date).getMinutes();
+    var minutes2 = ("0" + minutes1).slice(-2);
+    var hoursDiff2 = hours2 + ":" + minutes2;
     console.log("update at: " + tConvert(hoursDiff2));
     document.getElementById("info3").innerHTML =
       "update at: " + tConvert(hoursDiff2);

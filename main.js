@@ -40,6 +40,11 @@ function logDate(date, date2) {
   var nextUpdateM = 120 - minutes;
   console.log("updated at: " + date2);
   console.log("last updated: " + minutes + " minutes ago");
+
+  document.getElementById("info1").innerHTML = "updated at: " + date2;
+  document.getElementById("info2").innerHTML =
+    "last updated: " + minutes + " minutes ago";
+
   if (new Date(date).getHours() + 2 >= 24) {
     var hours1 = new Date(date).getHours() - 22;
     var hours2 = ("0" + hours1).slice(-2);
